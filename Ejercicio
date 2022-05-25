@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="index.js"></script>
+    <h1>Ejercicio 3 (M7)</h1>
+
+    <input type="number" name="" id="numeroHtml">
+    <button onclick="calculo()">Comprobar</button>
+    <p id="mensajeHtml"></p>
+
+   
+</body>
+</html>
+
+
+JAVA
+
+function calculo(){
+
+const numero = Number(document.getElementById("numeroHtml").value)
+console.log (numero)
+
+if(numero)
+
+if(numero % 2 === 0){
+
+    document.getElementById("mensajeHtml").innerHTML = "El número es PAR"
+}
+else{
+    document.getElementById("mensajeHtml").innerHTML="El número es IMPAR"
+}
+
+}
